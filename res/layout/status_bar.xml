@@ -97,7 +97,6 @@
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="0.45"
-            android:background="#00FF00"
             android:gravity="right"
             android:orientation="horizontal">
 
@@ -105,7 +104,6 @@
                 android:id="@+id/statusIcons"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="#0000FF"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:visibility="gone" />
