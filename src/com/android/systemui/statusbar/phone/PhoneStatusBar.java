@@ -1020,6 +1020,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode {
         if (SPEW) Log.d(TAG, "addIcon slot=" + slot + " index=" + index + " viewIndex=" + viewIndex
                 + " icon=" + icon);
         StatusBarIconView view = new StatusBarIconView(mContext, slot, null);
+        view.setScaleType(ImageView.ScaleType.FIT_XY);
         view.set(icon);
         mStatusIcons.addView(view, viewIndex, new LinearLayout.LayoutParams(48, 48));
     }
