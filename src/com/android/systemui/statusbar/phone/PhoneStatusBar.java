@@ -1022,7 +1022,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode {
         StatusBarIconView view = new StatusBarIconView(mContext, slot, null);
         view.setScaleType(ImageView.ScaleType.FIT_XY);
         view.set(icon);
-        mStatusIcons.addView(view, viewIndex, new LinearLayout.LayoutParams(48, 48));
+        mStatusIcons.addView(view, viewIndex, new LinearLayout.LayoutParams(32, 32));
     }
 
     public void updateIcon(String slot, int index, int viewIndex,
