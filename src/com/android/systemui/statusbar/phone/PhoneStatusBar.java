@@ -1021,7 +1021,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode {
                 + " icon=" + icon);
         StatusBarIconView view = new StatusBarIconView(mContext, slot, null);
         view.set(icon);
-        mStatusIcons.addView(view, viewIndex, new LinearLayout.LayoutParams(mIconSize, mIconSize));
+        mStatusIcons.addView(view, viewIndex, new LinearLayout.LayoutParams(48, 48));
     }
 
     public void updateIcon(String slot, int index, int viewIndex,
