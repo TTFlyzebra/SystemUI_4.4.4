@@ -400,6 +400,13 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode {
         mStatusBarView = (PhoneStatusBarView) mStatusBarWindow.findViewById(R.id.status_bar);
         mStatusBarView.setBar(this);
 
+        /**
+         * 添加最近的应用按钮事件
+         */
+        View recent_apps_bt = mStatusBarView.findViewById(R.id.fly_recent_apps);
+        recent_apps_bt.setOnClickListener(mRecentsClickListener);
+        recent_apps_bt.setOnTouchListener(mRecentsPreloadOnTouchListener);
+
         PanelHolder holder = (PanelHolder) mStatusBarWindow.findViewById(R.id.panel_holder);
         mStatusBarView.setPanelHolder(holder);
 
