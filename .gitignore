@@ -7,3 +7,4 @@ local.properties
 SystemUI4.4.4.iml
 app/bulid
 addp/app.iml
+src/com/android/systemui/EventLogTags.java
